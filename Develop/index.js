@@ -22,17 +22,17 @@ let generateMD = () => {
       },
       {
         type: "input",
-        message: "Write a description for your project: ",
+        message: "Write a description for your project:",
         name: "description"
       },
       {
         type: "input",
-        message: "Provide any installation instructions: ",
+        message: "Provide any installation instructions:",
         name: "instructions",
       },
       {
         type: "input",
-        message: "What does the user need to know in order to use the repository? ",
+        message: "What does the user need to know in order to use the repository?",
         name: "usage"
       },
       {
@@ -52,7 +52,7 @@ let generateMD = () => {
       },
       {
         type: "input",
-        message: "What does the user need to know about repository contribution? ",
+        message: "What does the user need to know about repository contribution?",
         name: "contributing"
       },
       {
@@ -62,12 +62,12 @@ let generateMD = () => {
       },
       {
         type: "input",
-        message: "Enter your GitHub username: ",
+        message: "Enter your GitHub username:",
         name: "github"
       },
       {
         type: "input",
-        message: "Enter your Email address: ",
+        message: "Enter your Email address:",
         name: "email"
       }
     ])
@@ -100,52 +100,52 @@ let getLicenseIcon = (license) => {
 }
 
 let readMeContent = (data) => {
-    return `# ${data.title}
-    
-    ${getLicenseIcon(data.license)}
-    
-    ## Description
-    
-    ${data.description}
-    
-    ## Table of Contents
-    
-    1. [Installation](#installation)
-    2. [Usage](#usage)
-    3. [License](#license)
-    4. [Contributing](#contributing)
-    5. [Tests](#tests)
-    6. [Questions](#questions)
-    
-    ## Installation
-    
-    ${data.instructions}
-    
-    ## Usage
-    
-    ${data.usage}
-    
-    ## License
-    
-    ${
-      data.license !== "No License"
-      ? `Licensed under the ${data.license} license.`
-      : "This project is not under any license."
-    }
-    
-    ## Contributing
-    
-    ${data.contributing}
-    
-    ## Tests 
-    
-    ${data.test}
-    
-    ## Questions
-    
-    My GitHub Page: [${data.github}](https://github.com/${data.github})
-    
-    If you want to reach out to me, please contact me at ${data.email}.`};
+  return `# ${data.title}
+  
+  ${getLicenseIcon(data.license)}
+  
+  ## Description
+  
+  ${data.description}
+  
+  ## Table of Contents
+  
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [License](#license)
+  4. [Contributing](#contributing)
+  5. [Tests](#tests)
+  6. [Questions](#questions)
+  
+  ## Installation
+  
+  ${data.instructions}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## License
+  
+  ${
+    data.license !== "No License"
+    ? `Licensed under the ${data.license} license.`
+    : "This project is not under any license."
+  }
+  
+  ## Contributing
+  
+  ${data.contributing}
+  
+  ## Tests 
+  
+  ${data.test}
+  
+  ## Questions
+  
+  My GitHub Page: [${data.github}](https://github.com/${data.github})
+  
+  If you want to reach out to me, please contact me at ${data.email}.`};
     
 
 // initialize script
