@@ -12,9 +12,8 @@ The task was to create a command-line application that dynamically generates a p
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Example](#example)
-4. [License](#license)
-5. [Contributing](#contributing)
-6. [Questions](#questions)
+4. [Screenshot of the Program](#screenshot-of-the-program)
+5. [Video Demonstration](#video-demonstration)
 
 ## Installation
 
